@@ -1,0 +1,200 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="dep/boot/css/bootstrap.min.css">
+    
+    <title>Smart Opticals</title>
+  </head>
+  <body class="container-lg text-center">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">Smart Opticals</a>
+      
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a id="sdply1" class="nav-link" href="#">Open Amount</a>
+        </li>
+        <li class="nav-item">
+          <a id="sdply2" class="nav-link" href="#">Orders</a>
+        </li>
+        <li class="nav-item">
+          <a id="sdply3" class="nav-link" href="#">Expenses</a>
+        </li>
+        <li class="nav-item">
+          <a id="sdply4" class="nav-link" href="#">Reports</a>
+        </li>
+      </ul>
+    </nav>
+    <br>
+      
+      <div class="jumbotron " id="dply1">
+        
+        <div class="jumbotron bg-light " id="out1"></div><br>
+      
+      <form id="form1" >
+        <table class="table bg-light" > <tr>
+        <div class="form-inline">
+          <td><label for="date1">Date:</label> </td><td> <input type="date" class="form-control" id="date1" required tabIndex="1" autofocus>
+       </td> 
+        </div>
+        </tr>
+        <tr>
+        <div class="form-inline ">
+          <td><label for="amt1">Open Amount:</label></td><td><input type="number" min="0" placeholder="Open Amount" class="form-control   text-center" id="amt1" required tabIndex="2">
+          </td>
+        </div>
+      </tr>
+       <tr>
+
+       <td colspan="2">
+        <div class="form-group ">
+          <p class="text-danger" id="er1"></p>
+          <p class="text-success" id="s1"></p>
+          <input type="button" value="Add" id="iopamt" class="btn btn-primary mr-5" >        <input type="button" value="Delete" id="dopamt" class="btn btn-danger" > 
+          </div></td></tr>
+        </table>
+      </form>
+    
+      </div>
+      </div>
+      <div class="jumbotron" id="dply2">
+        <table class="table bg-light" > <tr>
+          <div class="form-inline">
+            <td><label for="date2">Date:</label> </td><td> <input type="date" class="form-control" id="date2" required tabIndex="1" autofocus>
+         </td> </tr>
+          </div></table>
+        <div class="jumbotron bg-light " id="out2"></div><br>
+      
+        <form id="form1" >
+          <table class="table bg-light" > 
+          <tr>
+          <div class="form-inline ">
+            <td><label for="bno">Bill No:</label></td><td><input type="text"  placeholder="Bill Number" class="form-control   text-center" id="bno" required tabIndex="2">
+            </td>
+          </div>
+        </tr>
+         
+          <tr>
+            <div class="form-inline ">
+              <td><label for="tamt">Total Amount:</label></td><td><input type="number" value="0" min="0" placeholder="Total Amount" class="form-control   text-center" id="tamt" required tabIndex="3">
+              </td>
+            </div>
+          </tr>
+          
+          <tr>
+            <div class="form-inline ">
+              <td><label for="cash2">Cash:</label></td><td><input type="number"  value="0" min="0" placeholder="cash" class="form-control   text-center" id="cash2" required tabIndex="4">
+              </td>
+            </div>
+          </tr>
+
+          <tr>
+            <div class="form-inline ">
+              <td><label for="card">Card:</label></td><td><input type="number"  value="0" min="0" placeholder="Card" class="form-control   text-center" id="card" required tabIndex="5">
+              </td>
+            </div>
+          </tr>
+
+          <tr>
+            <div class="form-inline ">
+              <td><label for="gpay">Gpay:</label></td><td><input type="number"  value="0" min="0" placeholder="Gpay" class="form-control   text-center" id="gpay" required tabIndex="6">
+              </td>
+            </div>
+          </tr>
+          <tr>
+            <div class="form-inline ">
+              <td><label for="dvery">Delivery:</label></td><td><input type="checkbox"  class="form-check-input" id="dvery" required tabIndex="7"><label for="dvery">Select For Delivery</label></td>
+              
+            </div>
+          </tr>
+
+          <tr>
+            <div class="form-inline ">
+              <td><label for="bal">Balance:</label></td><td><input type="number" disabled  id="bal"></td>
+              
+            </div>
+          </tr>
+          <tr>
+            <div class="form-inline ">
+              <td><label for="recv">Receive:</label></td><td><input type="number" disabled  id="recv"></td>
+              
+            </div>
+          </tr>
+         <tr>
+         <td colspan="2">
+          <div class="form-group ">
+            <p class="text-danger" id="er2"></p>
+            <p class="text-success" id="s2"></p>
+            <input type="button" value="Add" id="iordr" class="btn btn-primary mr-5" >        <input type="button" value="Delete" id="dordr" class="btn btn-danger" > 
+            </div></td></tr>
+          </table>
+        </form>
+      
+        </div>
+      </div>
+      <div class="jumbotron" id="dply3">
+        <table class="table bg-light" > <tr>
+          <div class="form-inline">
+            <td><label for="date3">Date:</label> </td><td> <input type="date" class="form-control" id="date3" required tabIndex="1" autofocus>
+         </td> </tr>
+          </div></table>
+        <div class="jumbotron bg-light " id="out3"></div><br>
+      
+        <form id="form1" >
+          <table class="table bg-light" > 
+          <tr>
+          <div class="form-inline ">
+            <td><label for="exp">Expense Name:</label></td><td><input type="text"  placeholder="Expense Name" class="form-control   text-center" id="exp" required tabIndex="2">
+            </td>
+          </div>
+        </tr>
+         
+          <tr>
+            <div class="form-inline ">
+              <td><label for="eamt">Expense Amount:</label></td><td><input type="number" value="0" min="0" placeholder="Expense Amount" class="form-control   text-center" id="eamt" required tabIndex="3">
+              </td>
+            </div>
+          </tr>
+        
+         <tr>
+         <td colspan="2">
+          <div class="form-group ">
+            <p class="text-danger" id="er3"></p>
+            <p class="text-success" id="s3"></p>
+            <input type="button" value="Add" id="iexp" class="btn btn-primary mr-5" >        <input type="button" value="Delete" id="dexp" class="btn btn-danger" > 
+            </div></td></tr>
+          </table>
+        </form>
+      
+        </div>
+     </div>
+     <div class="jumbotron" id="dply4">
+      <table class="table bg-light" > <tr>
+        <div class="form-inline">
+          <td><label for="date4">Date:</label> </td><td> <input type="date" class="form-control" id="date4" required tabIndex="1" autofocus>
+       </td> </tr>
+        </div></table>
+      <div class="jumbotron bg-light " id="out4"></div>
+      
+      <input type="button" value="Print" id="print" class="btn btn-primary mr-5" > 
+   </div>
+  
+    </body>
+
+    
+    <script src="./mod/even.js"></script>
+    <script src="../preload.js"></script>
+    <script src="dep/jquery/jquery-3.6.0.min.js"></script>
+  <script src="dep/jquery/popper.min.js"></script>
+  <script src="dep/boot/js/bootstrap.min.js"></script>
+  <script src="dep/jquery/jquery-3.6.0.slim.js"></script>
+  <script src="dep/boot/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
